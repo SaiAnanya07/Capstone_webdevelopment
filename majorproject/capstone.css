@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #373737;
+}
+.frontline p {
+  font-size: xx-large;
+  text-align: center;
+}
+.c5 a {
+  color: black;
+}
+body .bgimage {
+  background-image: url(rhyno\ final.3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  background-color: #373737;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+.fa-instagram,
+.fa-linkedin-in {
+  font-size: xx-large;
+}
+nav .navigation ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+nav .navigation ul li,
+select {
+  margin-right: 50px;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fafafa;
+}
+select {
+  border: none;
+  appearance: none;
+  background-color: #373737;
+}
+select option {
+  padding: 10px;
+}
+select:hover {
+  color: #fff225;
+  cursor: pointer;
+}
+option:hover {
+  color: #fff225;
+  cursor: pointer;
+}
+nav .navigation ul li :hover {
+  color: #fff225;
+  transition: 0.6s;
+}
+nav .navigation a {
+  text-decoration: none;
+  color: #fafafa;
+}
+nav .navigation ul .prebook {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #ff9900; /* Example background color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav .navigation ul .prebook a {
+  color: #ffffff;
+}
+
+nav .navigation ul .prebook:hover {
+  background-color: #cc7a00; /* Example hover color */
+}
+#AboutUs {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #373737;
+}
+.icon {
+  font-size: xx-large;
+}
+#ContactUs ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+#ContactUs ul li {
+  list-style: none;
+}
+#ContactUs ul li b {
+  font-size: x-large;
+}
+#ContactUs a {
+  text-decoration: none;
+  color: #373737;
+}
+#ContactUs a:hover {
+  font-weight: bold;
+}
+nav .fa-solid {
+  display: none;
+}
+@media (max-width: 700px) {
+  body {
+    font-size: small;
+  }
+  nav .navigation ul {
+    position: absolute;
+    background-color: #373737;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .navigation ul li,
+  select {
+    padding: 10px;
+  }
+  nav,
+  .navigation .fa-solid {
+    display: block;
+    color: #fafafa;
+    font-size: large;
+    margin-right: 0;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #373737;
+  color: #fafafa;
+  padding: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #fafafa;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+footer ul li a:hover {
+  color: #fff225;
+}
